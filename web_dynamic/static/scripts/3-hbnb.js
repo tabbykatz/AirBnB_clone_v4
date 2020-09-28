@@ -25,10 +25,10 @@ $.get('http://0.0.0.0:5001/api/v1/status/', function (data, status) {
   }
 });
 
-const user = {};
+const users = {};
 $.getJSON('http://0.0.0.0:5001/api/v1/users', function (data) {
   for (const user of data) {
-    user[user.id] = user.first_name + ' ' + user.last_name;
+    users[user.id] = user.first_name + ' ' + user.last_name;
   }
 });
 
