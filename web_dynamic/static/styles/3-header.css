@@ -1,18 +1,18 @@
-@charset"UTF-8";
-
+/* header */
 header {
+    background: white;
+    background-image: url("../images/logo.png");
+    background-repeat: no-repeat;
+    background-position: 20px 50%;
     height: 70px;
     width: 100%;
     border-bottom: 1px solid #CCCCCC;
-    background: white url(../images/logo.png);
-    background-repeat: no-repeat;
-    background-position: 20px center;
-    flex-shrink: 0;
 }
 
-header div {
+/* for the api */
+#api_status {
     float: right;
-    background-color: #CCCCCC;
+    background-color: #cccccc;
     border: 1px;
     border-radius: 50%;
     height: 40px;
@@ -21,6 +21,7 @@ header div {
     margin-right: 30px;
 }
 
+/* background */
 .available {
-    background-color: #FF545F;
+	background-color: #ff545f !important;
 }
