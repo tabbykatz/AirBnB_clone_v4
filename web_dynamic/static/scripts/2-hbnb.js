@@ -3,9 +3,9 @@ $(document).ready(function () {
   $('input:checkbox').click(function () {
     $(this).each(function () {
       if (this.checked) {
-	amens[$(this).data('id')] = $(this).data('name');
+        amens[$(this).data('id')] = $(this).data('name');
       } else {
-	delete amens[$(this).data('id')];
+        delete amens[$(this).data('id')];
       }
     });
     if (Object.values(amens).length > 0) {
